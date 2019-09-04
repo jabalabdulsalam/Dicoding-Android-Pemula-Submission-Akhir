@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto_tempat_detail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        tools:src="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/tv_nama_tempat_detail"
+        style="@style/TextContent"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@id/foto_tempat_detail"
+        android:text="@string/mesjid_raya_baiturrahman"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lokasi_detail"
+        style="@style/TextContent4"
+        android:layout_below="@id/tv_nama_tempat_detail"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@id/foto_tempat_detail"
+        android:text="@string/banda_aceh" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            style="@style/TextContent3"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="0dp"
+            android:text="@string/deskripsi" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextContent4"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/kategori" />
+
+                <TextView
+                    android:id="@+id/isi_kategori"
+                    style="@style/TextContent4"
+                    android:text="@string/isi_kategori" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    style="@style/TextContent4"
+                    android:layout_marginLeft="0dp"
+                    android:text="@string/jam_operasional" />
+
+                <TextView
+                    android:id="@+id/isi_jamOperasional"
+                    style="@style/TextContent4"
+                    android:text="@string/isi_jam_operasional" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
